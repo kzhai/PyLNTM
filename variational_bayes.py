@@ -1956,7 +1956,7 @@ class VariationalBayes(Inferencer):
 			topic_log_likelihood = self.m_step_process_queue(phi_sufficient_statistics, number_of_processes)
 		clock_m_step = time.time() - clock_m_step
 
-		print document_log_likelihood, topic_log_likelihood
+		#print document_log_likelihood, topic_log_likelihood
 		joint_log_likelihood = document_log_likelihood + topic_log_likelihood
 
 		print "e_step and m_step of iteration %d finished in %g and %g seconds respectively with log likelihood %g" % (
